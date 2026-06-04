@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.7",
+  "package": "dosliz.funnytweaks.mixins",
+  "refmap": "mixins.funnytweaks.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "MixinMinecraft",
+    "MixinVelocity",
+    "MixinCamera",
+    "MixinPlayerController",
+    "MixinEntityPlayerSP"
+  ],
+  "mixins": [
+    "MixinNetworkManager",
+    "MixinEntityLivingBase"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
