@@ -6,8 +6,8 @@ import java.io.File;
 public class FunnyTweaksConfig {
     public static Configuration config;
 
-    public static boolean cameraTweaks = true;
-    public static double cameraTweaksMultiplier = 1.1487D;
+    public static boolean partialTicks = true;
+    public static double partialTicksMultiplier = 1.1487D;
     public static boolean resetPlayerAge = true;
     public static boolean customPhysics = true;
     public static boolean fastClick = true;
@@ -25,8 +25,8 @@ public class FunnyTweaksConfig {
     public static void load() {
         config.load();
 
-        cameraTweaks = config.get(Configuration.CATEGORY_GENERAL, "cameraTweaks", true, "Enable Camera Smoothness").getBoolean();
-        cameraTweaksMultiplier = config.get(Configuration.CATEGORY_GENERAL, "cameraTweaksMultiplier", 1.1487D, "Camera Smoothness Multiplier", 0.0D, 10.0D).getDouble();
+        partialTicks = config.get(Configuration.CATEGORY_GENERAL, "partialTicks", true, "Enable partial ticks multiplier").getBoolean();
+        partialTicksMultiplier = config.get(Configuration.CATEGORY_GENERAL, "partialTicksMultiplier", 1.1487D, "partialTicks multiplier value", 0.0D, 10.0D).getDouble();
         resetPlayerAge = config.get(Configuration.CATEGORY_GENERAL, "resetPlayerAge", true, "Disable Player Aging").getBoolean();
         customPhysics = config.get(Configuration.CATEGORY_GENERAL, "customPhysics", true, "Enable custom movement physics").getBoolean();
         fastClick = config.get(Configuration.CATEGORY_GENERAL, "fastClick", true, "Enable Fast Block Clicking").getBoolean();
